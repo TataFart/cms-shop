@@ -63,11 +63,12 @@
                 </label>
 
                 <label><span>Категория</span>
-                    <select name="category" id="category">
-                        <option value="for_home">Техника для дома</option>
-                        <option value="for_beauty">Бытовая техника для красоты</option>
-                        <option value="for_kitchen">Кухонная бытовая техника</option>
-                    </select>   
+                    <input type="text" list="categories" id="category" name="category">
+                    <datalist name="category" id="categories">
+                        <option value="Техника для дома"></option>
+                        <option value="Бытовая техника для красоты"></option>
+                        <option value="Кухонная бытовая техника"></option>
+                    </datalist>   
                 </label>
 
                 <label><span>Единицы измерения</span>
