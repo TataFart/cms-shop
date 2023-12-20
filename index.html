@@ -4,16 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CMS-GoodShop - интернет-магазин техники</title>
-    <style>
-        label{
-            display: block;
-            margin-bottom: 10px ;
-        }
-        span{
-            display: inline-block;
-            width: 150px;
-        }
-    </style>
 </head>
 
 <body>
@@ -54,50 +44,6 @@
         </table>
     </section>
     
-    <section>
-        <h2>Добавить товар</h2>
-        <form action="https://jsonplaceholder.typicode.com/posts" method="post">
-            <fieldset>
-                <label><span>Наименование</span>
-                    <input type="text" name="name" id="name">
-                </label>
-
-                <label><span>Категория</span>
-                    <input type="text" list="categories" id="category" name="category">
-                    <datalist name="category" id="categories">
-                        <option value="Техника для дома"></option>
-                        <option value="Бытовая техника для красоты"></option>
-                        <option value="Кухонная бытовая техника"></option>
-                    </datalist>   
-                </label>
-
-                <label><span>Единицы измерения</span>
-                    <input type="text" name="unit">
-                </label>
-
-                <label for="discont"><span>Дисконт</span>                   
-                </label>
-                <input type="checkbox" name="discont">
-                <input type="text" name="discont_size" id="discont">
-
-                <label><span>Описание</span>
-                    <textarea cols="15" rows="3" name="description"></textarea>
-                </label>
-
-                <label><span>Количество</span>
-                    <input type="number" name="amount">
-                </label>
-
-                <label><span>Цена</span>
-                    <input type="number" name="price">
-                </label>
-
-                <label>
-                    <input type="file" name="file" id="file" accept="image/*">
-                </label>
-            </fieldset>
-            <button type="submit" formtarget="blanc">Добавить товар</button>
-        </form>
-    </section>
+    
 </body>
 </html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <p>Добавить товар</p>
+            <form name="addProduct" action="https://jsonplaceholder.typicode.com/posts" method="post">
+            <fieldset>
+                <label for="name">Наименование</label>
+                <input type="text" name="name" id="name" required>
+                
+                <label for="category">Категория</label>
+                    <input type="text" list="categories" id="category" name="category" required>
+                    <datalist name="category" id="categories">
+                        <option value="Техника для дома"></option>
+                        <option value="Бытовая техника для красоты"></option>
+                        <option value="Кухонная бытовая техника"></option>
+                    </datalist>   
+                
+                <label for="unit">Единицы измерения</label>
+                <input type="text" name="unit" id="unit" required>
+                
+                <label for="discont">Дисконт</label>              
+                <div>
+                    <input aria-label="добавить скидку" type="checkbox">
+                    <input type="text" name="discont" id="discont" disabled>
+                </div>
+
+                <label for="description">Описание</label>
+                <textarea cols="15" rows="3" name="description" id="description" required></textarea>
+                
+                <label for="amount">Количество</label>
+                    <input type="number" name="amount" id="amount" required>
+                
+
+                <label for="price">Цена
+                    <input type="number" name="price" id="price" required>
+                </label>
+
+                <input aria-label="добавить файл" type="file" name="file" id="file" accept="image/*">
+                
+            </fieldset>
+            <button type="submit" formtarget="blanc">Добавить товар</button>
+        </form>
+    </div>
+</body>
+</html>
